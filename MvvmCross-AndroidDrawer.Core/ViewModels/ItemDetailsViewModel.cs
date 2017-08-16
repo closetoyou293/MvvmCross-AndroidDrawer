@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using MvvmCrossAndroidDrawer.Core.Models;
@@ -12,6 +11,20 @@ namespace MvvmCrossAndroidDrawer.Core.ViewModels
 
         private Item _item;
 
+        private string _name;
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+                RaisePropertyChanged(() => Name);
+            }
+        }
+
         public ItemDetailsViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
@@ -19,8 +32,9 @@ namespace MvvmCrossAndroidDrawer.Core.ViewModels
 
         public override Task Initialize(Item parameter)
         {
-            _item = parameter;
-            return Task.FromResult(0);
+			_item = parameter;
+			Name = _item.Name;
+			return Task.FromResult(0);
         }
     }
 }

@@ -32,9 +32,9 @@ namespace MvvmCrossAndroidDrawer.Core.ViewModels
                 Items.Add(new Item { Id = i, Name = string.Format("Item {0}", i) });
             }
 
-            ShowItemDetailsCommand = new MvxAsyncCommand<Item>(async (item) => await _navigationService.Navigate<ItemDetailsViewModel, Item>(item));
+            ItemSelectedCommand = new MvxAsyncCommand<Item>(async (item) => await _navigationService.Navigate<ItemDetailsViewModel, Item>(item));
         }
 
-        public IMvxCommand<Item> ShowItemDetailsCommand { get; private set; }
+        public IMvxCommand<Item> ItemSelectedCommand { get; private set; }
     }
 }

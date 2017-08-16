@@ -1,5 +1,6 @@
 ﻿using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.IoC;
+using MvvmCrossAndroidDrawer.Core.ViewModels;
 
 namespace MvvmCrossAndroidDrawer.Core
 {
@@ -12,7 +13,7 @@ namespace MvvmCrossAndroidDrawer.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            //RegisterNavigationServiceAppStart<MainViewModel>();
+            RegisterNavigationServiceAppStart<MainViewModel>();
         }
     }
 }

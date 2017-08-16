@@ -11,12 +11,12 @@ using MvvmCrossAndroidDrawer.Core.ViewModels;
 namespace MvvmCrossAndroidDrawer.Android.Views
 {
     [Activity(
-		Label = "Examples",
+		Label = "MvvmCross Drawer",
 		Theme = "@style/AppTheme",
 		LaunchMode = LaunchMode.SingleTop,
 		Name = "mvvmcrossandroiddrawer.android.views.MainActivity"
 		)]
-	public class MainActivity : MvxCachingFragmentCompatActivity<MainViewModel>
+	public class MainActivity : MvxCachingFragmentCompatActivity<MainViewModel>, INavigationActivity
 	{
 		public DrawerLayout DrawerLayout { get; set; }
 

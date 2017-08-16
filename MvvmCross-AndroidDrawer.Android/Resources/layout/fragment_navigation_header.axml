@@ -5,7 +5,7 @@
     android:layout_height="160dp"
     android:background="@color/colorPrimaryDark"
     android:padding="16dp">
-    <ImageView
+<!--<ImageView
         android:src="@drawable/mvvmcrosslogo"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
@@ -13,7 +13,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/element_margin_medium"
-        android:scaleType="fitStart" />
+        android:scaleType="fitStart" />-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
