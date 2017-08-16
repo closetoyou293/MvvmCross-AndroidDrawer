@@ -5,9 +5,8 @@ using MvvmCross.Droid.Views;
 namespace MvvmCrossAndroidDrawer.Android
 {
     [Activity(
-        Label = "Example.Droid"
+        Label = "MvvmCross Drawer"
         , MainLauncher = true
-        , Icon = "@drawable/icon"
         , Theme = "@style/AppTheme.Splash"
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]

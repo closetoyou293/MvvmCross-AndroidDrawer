@@ -5,13 +5,10 @@
 	<group
 		android:id="@+id/nav_items">
 		<item
-		    android:id="@+id/nav_planets"
-		    android:title="Target: Planets" />
+		    android:id="@+id/nav_home"
+		    android:title="Home" />
 		<item
-		    android:id="@+id/nav_people"
-		    android:title="Target: People" />
-		<item
-		    android:id="@+id/nav_statistics"
-		    android:title="Statistics" />
+		    android:id="@+id/nav_options"
+		    android:title="Options" />
 	</group>
 </menu>

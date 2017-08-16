@@ -8,13 +8,33 @@ namespace MvvmCrossAndroidDrawer.Core.ViewModels
     {
         private readonly IMvxNavigationService _navigationService;
 
+        private MvxObservableCollection<Item> _items;
+        public MvxObservableCollection<Item> Items
+        {
+            get
+            {
+                return _items;
+            }
+            set
+            {
+                _items = value;
+                RaisePropertyChanged(() => Items);
+            }
+        }
+
         public ItemListViewModel(IMvxNavigationService navigationService)
         {
-			_navigationService = navigationService;
+            _navigationService = navigationService;
 
-            ShowItemDetailsCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<ItemDetailsViewModel, Item>(new Item { Id = 1, Name = "Test" }));
-		}
+            Items = new MvxObservableCollection<Item>();
+            for (int i = 1; i <= 50; i++)
+            {
+                Items.Add(new Item { Id = i, Name = string.Format("Item {0}", i) });
+            }
 
-		public IMvxCommand ShowItemDetailsCommand { get; private set; }
+            ShowItemDetailsCommand = new MvxAsyncCommand<Item>(async (item) => await _navigationService.Navigate<ItemDetailsViewModel, Item>(item));
+        }
+
+        public IMvxCommand<Item> ShowItemDetailsCommand { get; private set; }
     }
 }
