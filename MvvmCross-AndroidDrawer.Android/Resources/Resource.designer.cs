@@ -5889,7 +5889,10 @@ namespace MvvmCrossAndroidDrawer.Android
 			public const int nav_items = 2131296427;
 			
 			// aapt resource value: 0x7f0900ad
-			public const int nav_options = 2131296429;
+			public const int nav_itemtype1list = 2131296429;
+			
+			// aapt resource value: 0x7f0900ae
+			public const int nav_options = 2131296430;
 			
 			// aapt resource value: 0x7f090079
 			public const int navigation_frame = 2131296377;
@@ -6275,10 +6278,10 @@ namespace MvvmCrossAndroidDrawer.Android
 			public const int abc_select_dialog_material = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int activity_itemdetails = 2130968603;
+			public const int activity_itemtype1details = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int activity_itemeditor = 2130968604;
+			public const int activity_itemtype1editor = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
 			public const int activity_main = 2130968605;
@@ -6329,7 +6332,7 @@ namespace MvvmCrossAndroidDrawer.Android
 			public const int fragment_home = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int fragment_itemlist = 2130968621;
+			public const int fragment_itemtype1list = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
 			public const int fragment_navigation = 2130968622;

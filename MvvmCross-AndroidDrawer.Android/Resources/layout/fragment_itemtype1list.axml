@@ -15,6 +15,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             local:MvxItemTemplate="@layout/listitem_itemlist"
-            local:MvxBind="ItemsSource Items; ItemClick ItemSelectedCommand" />
+            local:MvxBind="ItemsSource ItemType1List; ItemClick ItemType1SelectedCommand" />
     </MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>

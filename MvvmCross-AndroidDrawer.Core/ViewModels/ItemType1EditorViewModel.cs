@@ -5,20 +5,20 @@ using MvvmCrossAndroidDrawer.Core.Models;
 
 namespace MvvmCrossAndroidDrawer.Core.ViewModels
 {
-    public class ItemEditorViewModel : MvxViewModel<Item>
+    public class ItemType1EditorViewModel : MvxViewModel<ItemType1>
 	{
 		private readonly IMvxNavigationService _navigationService;
 
-		private Item _item;
+		private ItemType1 _itemType1;
 
-		public ItemEditorViewModel(IMvxNavigationService navigationService)
+		public ItemType1EditorViewModel(IMvxNavigationService navigationService)
 		{
 			_navigationService = navigationService;
 		}
 
-        public override Task Initialize(Item parameter)
+        public override Task Initialize(ItemType1 parameter)
 		{
-			_item = parameter;
+			_itemType1 = parameter;
 			return Task.FromResult(0);
         }
     }

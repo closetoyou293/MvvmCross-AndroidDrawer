@@ -56,6 +56,9 @@ namespace MvvmCrossAndroidDrawer.Android.Views
                 case Resource.Id.nav_home:
 					ViewModel.ShowHomeCommand.Execute(null);
 					break;
+                case Resource.Id.nav_itemtype1list:
+                    ViewModel.ShowItemType2ListCommand.Execute(null);
+					break;
                 case Resource.Id.nav_options:
 					ViewModel.ShowOptionsCommand.Execute(null);
 					break;

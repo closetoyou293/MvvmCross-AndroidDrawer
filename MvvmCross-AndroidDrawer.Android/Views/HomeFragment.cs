@@ -25,16 +25,16 @@ namespace MvvmCrossAndroidDrawer.Android.Views
             {
                 var fragments = new List<MvxCachingFragmentStatePagerAdapter.FragmentInfo>
                 {
-                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 1", typeof(ItemListFragment),
-                                                                         typeof(ItemListViewModel)),
-                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 2", typeof(ItemListFragment),
-                                                                         typeof(ItemListViewModel)),
-                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 3", typeof(ItemListFragment),
-                                                                         typeof(ItemListViewModel)),
-                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 4", typeof(ItemListFragment),
-                                                                         typeof(ItemListViewModel)),
-                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 5", typeof(ItemListFragment),
-                                                                         typeof(ItemListViewModel))
+                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 1", typeof(ItemType1ListFragment),
+                                                                         typeof(ItemType1ListViewModel)),
+                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 2", typeof(ItemType1ListFragment),
+                                                                         typeof(ItemType1ListViewModel)),
+                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 3", typeof(ItemType1ListFragment),
+                                                                         typeof(ItemType1ListViewModel)),
+                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 4", typeof(ItemType1ListFragment),
+                                                                         typeof(ItemType1ListViewModel)),
+                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("List 5", typeof(ItemType1ListFragment),
+                                                                         typeof(ItemType1ListViewModel))
                 };
                 viewPager.Adapter = new MvxCachingFragmentStatePagerAdapter(Activity, ChildFragmentManager, fragments);
             }

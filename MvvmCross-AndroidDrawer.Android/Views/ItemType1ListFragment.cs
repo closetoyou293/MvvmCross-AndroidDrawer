@@ -11,14 +11,14 @@ using MvvmCrossAndroidDrawer.Core.ViewModels;
 namespace MvvmCrossAndroidDrawer.Android.Views
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
-    [Register("mvvmcrossandroiddrawer.android.views.ItemListFragment")]
-    public class ItemListFragment : MvxFragment<ItemListViewModel>
+    [Register("mvvmcrossandroiddrawer.android.views.ItemType1ListFragment")]
+    public class ItemType1ListFragment : MvxFragment<ItemType1ListViewModel>
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var ignore = base.OnCreateView(inflater, container, savedInstanceState);
 
-            var view = this.BindingInflate(Resource.Layout.fragment_itemlist, null);
+            var view = this.BindingInflate(Resource.Layout.fragment_itemtype1list, null);
 
             var recyclerView = view.FindViewById<MvxRecyclerView>(Resource.Id.my_recycler_view);
             if (recyclerView != null)

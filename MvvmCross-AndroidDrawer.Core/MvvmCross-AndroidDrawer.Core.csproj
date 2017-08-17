@@ -30,13 +30,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
-    <Compile Include="ViewModels\ItemDetailsViewModel.cs" />
-    <Compile Include="ViewModels\ItemListViewModel.cs" />
+    <Compile Include="ViewModels\ItemType1DetailsViewModel.cs" />
+    <Compile Include="ViewModels\ItemType1ListViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="ViewModels\OptionsViewModel.cs" />
-    <Compile Include="Models\Item.cs" />
-    <Compile Include="ViewModels\ItemEditorViewModel.cs" />
+    <Compile Include="Models\ItemType1.cs" />
+    <Compile Include="ViewModels\ItemType1EditorViewModel.cs" />
+    <Compile Include="Models\ItemType2.cs" />
+    <Compile Include="ViewModels\ItemType2ListViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">

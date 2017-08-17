@@ -12,7 +12,7 @@ namespace MvvmCrossAndroidDrawer.Core.ViewModels
 		{
 			_navigationService = navigationService;
 
-			ShowItemEditorCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<ItemEditorViewModel, Item>(new Item { Id = 1, Name = "Test" }));
+			ShowItemEditorCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<ItemType1EditorViewModel, ItemType1>(new ItemType1 { Id = 1, Name = "Test" }));
 		}
 
 		public IMvxCommand ShowItemEditorCommand { get; private set; }

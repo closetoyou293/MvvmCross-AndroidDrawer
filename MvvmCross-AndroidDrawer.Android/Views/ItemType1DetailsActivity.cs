@@ -5,13 +5,13 @@ using MvvmCrossAndroidDrawer.Core.ViewModels;
 
 namespace MvvmCrossAndroidDrawer.Android.Views
 {
-    [Activity(Name = "mvvmcrossandroiddrawer.android.views.ItemEditorActivity",
+    [Activity(Name = "mvvmcrossandroiddrawer.android.views.ItemType1DetailsActivity",
               Theme = "@style/AppTheme")]
-    public class ItemEditorActivity : MvxAppCompatActivity<ItemEditorViewModel>
+    public class ItemType1DetailsActivity : MvxAppCompatActivity<ItemType1DetailsViewModel>
     {
         protected override void OnViewModelSet()
         {
-            SetContentView(Resource.Layout.activity_itemeditor);
+            SetContentView(Resource.Layout.activity_itemtype1details);
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
         }

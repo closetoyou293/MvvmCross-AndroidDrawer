@@ -5,11 +5,11 @@ using MvvmCrossAndroidDrawer.Core.Models;
 
 namespace MvvmCrossAndroidDrawer.Core.ViewModels
 {
-    public class ItemDetailsViewModel : MvxViewModel<Item>
+    public class ItemType1DetailsViewModel : MvxViewModel<ItemType1>
     {
         private readonly IMvxNavigationService _navigationService;
 
-        private Item _item;
+        private ItemType1 _itemType1;
 
         private string _name;
         public string Name
@@ -25,15 +25,15 @@ namespace MvvmCrossAndroidDrawer.Core.ViewModels
             }
         }
 
-        public ItemDetailsViewModel(IMvxNavigationService navigationService)
+        public ItemType1DetailsViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
         }
 
-        public override Task Initialize(Item parameter)
+        public override Task Initialize(ItemType1 parameter)
         {
-			_item = parameter;
-			Name = _item.Name;
+			_itemType1 = parameter;
+			Name = _itemType1.Name;
 			return Task.FromResult(0);
         }
     }
