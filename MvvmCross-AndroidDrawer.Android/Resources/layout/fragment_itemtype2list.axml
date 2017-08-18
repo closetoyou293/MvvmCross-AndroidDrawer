@@ -10,11 +10,10 @@
         local:layout_behavior="@string/appbar_scrolling_view_behavior"
         local:MvxBind="Refreshing IsRefreshing; RefreshCommand ReloadCommand">
         <MvxRecyclerView
-            android:id="@+id/itemtype1list_recyclerview"
+            android:id="@+id/itemtype2list_recyclerview"
             android:scrollbars="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            local:MvxItemTemplate="@layout/listitem_itemtype1list"
-            local:MvxBind="ItemsSource ItemType1List; ItemClick ItemType1SelectedCommand" />
+            local:MvxItemTemplate="@layout/listitem_itemtype2list" />
     </MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>

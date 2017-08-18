@@ -20,7 +20,7 @@ namespace MvvmCrossAndroidDrawer.Android.Views
 
             var view = this.BindingInflate(Resource.Layout.fragment_itemtype1list, null);
 
-            var recyclerView = view.FindViewById<MvxRecyclerView>(Resource.Id.my_recycler_view);
+            var recyclerView = view.FindViewById<MvxRecyclerView>(Resource.Id.itemtype1list_recyclerview);
             if (recyclerView != null)
             {
                 recyclerView.HasFixedSize = true;

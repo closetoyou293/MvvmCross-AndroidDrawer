@@ -39,6 +39,7 @@
     <Compile Include="ViewModels\ItemType1EditorViewModel.cs" />
     <Compile Include="Models\ItemType2.cs" />
     <Compile Include="ViewModels\ItemType2ListViewModel.cs" />
+    <Compile Include="ViewModels\RecyclerViewAdapterSampleViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">

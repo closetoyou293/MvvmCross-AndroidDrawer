@@ -150,6 +150,8 @@
     <Compile Include="Views\MenuView.cs" />
     <Compile Include="Views\Adapters\ItemType1RecyclerViewAdapter.cs" />
     <Compile Include="Views\Adapters\ItemType2RecyclerViewAdapter.cs" />
+    <Compile Include="Views\ItemType2ListFragment.cs" />
+    <Compile Include="Views\RecyclerViewAdapterSampleFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -178,9 +180,12 @@
     <AndroidResource Include="Resources\layout\fragment_home.axml" />
     <AndroidResource Include="Resources\layout\fragment_options.axml" />
     <AndroidResource Include="Resources\layout\fragment_itemtype1list.axml" />
-    <AndroidResource Include="Resources\layout\listitem_itemlist.axml" />
+    <AndroidResource Include="Resources\layout\listitem_itemtype1list.axml" />
     <AndroidResource Include="Resources\layout\activity_itemtype1details.axml" />
     <AndroidResource Include="Resources\layout\activity_itemtype1editor.axml" />
+    <AndroidResource Include="Resources\layout\fragment_itemtype2list.axml" />
+    <AndroidResource Include="Resources\layout\listitem_itemtype2list.axml" />
+    <AndroidResource Include="Resources\layout\fragment_recyclerviewadaptersample.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
