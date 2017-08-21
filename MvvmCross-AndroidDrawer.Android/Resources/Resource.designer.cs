@@ -5891,11 +5891,11 @@ namespace MvvmCrossAndroidDrawer.Android
 			// aapt resource value: 0x7f0900ac
 			public const int nav_items = 2131296428;
 			
-			// aapt resource value: 0x7f0900ae
-			public const int nav_itemtype1list = 2131296430;
-			
 			// aapt resource value: 0x7f0900af
 			public const int nav_options = 2131296431;
+			
+			// aapt resource value: 0x7f0900ae
+			public const int nav_recyclerviewadaptersample = 2131296430;
 			
 			// aapt resource value: 0x7f090079
 			public const int navigation_frame = 2131296377;

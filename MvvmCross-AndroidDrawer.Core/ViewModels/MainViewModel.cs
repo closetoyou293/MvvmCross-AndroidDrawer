@@ -12,9 +12,9 @@ namespace MvvmCrossAndroidDrawer.Core.ViewModels
             _navigationService = navigationService;
 
 			ShowHomeViewModelCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<HomeViewModel>());
-            ShowItemType2ListViewModelCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<ItemType2ListViewModel>());
-            ShowOptionsViewModelCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<OptionsViewModel>());
             ShowMenuViewModelCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<MenuViewModel>());
+            ShowOptionsViewModelCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<OptionsViewModel>());
+            ShowRecyclerViewAdapterViewModelSampleCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<RecyclerViewAdapterSampleViewModel>());
         }
 
         public override void Start()
@@ -23,8 +23,8 @@ namespace MvvmCrossAndroidDrawer.Core.ViewModels
         }
 
 		public IMvxAsyncCommand ShowHomeViewModelCommand { get; private set; }
-		public IMvxAsyncCommand ShowItemType2ListViewModelCommand { get; private set; }
-        public IMvxAsyncCommand ShowOptionsViewModelCommand { get; private set; }
         public IMvxAsyncCommand ShowMenuViewModelCommand { get; private set; }
+        public IMvxAsyncCommand ShowOptionsViewModelCommand { get; private set; }
+        public IMvxAsyncCommand ShowRecyclerViewAdapterViewModelSampleCommand { get; private set; }
     }
 }

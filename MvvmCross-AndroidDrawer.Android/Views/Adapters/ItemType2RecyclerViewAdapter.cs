@@ -25,16 +25,23 @@ namespace MvvmCrossAndroidDrawer.Android.Views.Adapters
 
         public class ViewHolder : MvxRecyclerViewHolder
         {
-            private readonly TextView innerText;
+            private readonly TextView _innerText;
+            private readonly MvxRecyclerView _itemType1List;
 
             public ViewHolder(View itemView, IMvxAndroidBindingContext context)
                 : base(itemView, context)
             {
-                this.innerText = itemView.FindViewById<TextView>(Resource.Id.innerText);
+                this._innerText = itemView.FindViewById<TextView>(Resource.Id.innerText);
+                this._itemType1List = itemView.FindViewById<MvxRecyclerView>(Resource.Id.itemtype1list_recyclerview);
+
+                var adapter = new ItemType1RecyclerViewAdapter((IMvxAndroidBindingContext)this.BindingContext);
+                _itemType1List.Adapter = adapter;
+                
                 this.DelayBind(() =>
                 {
                     var set = this.CreateBindingSet<ViewHolder, ItemType2>();
-                    set.Bind(this.innerText).To(x => x.Name);
+                    set.Bind(this._innerText).To(vm => vm.Name);
+                    set.Bind(this._itemType1List).For(v => v.ItemsSource).To(vm => vm.ItemType1List);
                     set.Apply();
                 });
             }

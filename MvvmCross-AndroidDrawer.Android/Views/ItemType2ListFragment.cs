@@ -19,17 +19,17 @@ namespace MvvmCrossAndroidDrawer.Android.Views
         {
             var ignore = base.OnCreateView(inflater, container, savedInstanceState);
 
-            var view = this.BindingInflate(Resource.Layout.fragment_itemtype1list, null);
+            var view = this.BindingInflate(Resource.Layout.fragment_itemtype2list, null);
 
 			var adapter = new ItemType2RecyclerViewAdapter((IMvxAndroidBindingContext)this.BindingContext);
-			var set = this.CreateBindingSet<ItemType2ListFragment, ItemType2ListViewModel>();
-			set.Bind(adapter)
-			   .For(x => x.ItemsSource)
-			   .To(x => x.ItemType2List);
-			set.Apply();
-
-			var recyclerView = view.FindViewById<MvxRecyclerView>(Resource.Id.itemtype1list_recyclerview);
+			var recyclerView = view.FindViewById<MvxRecyclerView>(Resource.Id.itemtype2list_recyclerview);
             recyclerView.Adapter = adapter;
+
+            var set = this.CreateBindingSet<ItemType2ListFragment, ItemType2ListViewModel>();
+            set.Bind(adapter)
+               .For(x => x.ItemsSource)
+               .To(x => x.ItemType2List);
+            set.Apply();
 
             return view;
         }

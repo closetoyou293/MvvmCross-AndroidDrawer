@@ -8,8 +8,8 @@
 		    android:id="@+id/nav_home"
 		    android:title="Home" />
         <item
-            android:id="@+id/nav_itemtype1list"
-            android:title="Items Type 2" />
+            android:id="@+id/nav_recyclerviewadaptersample"
+            android:title="Recycler Adapter Sample" />
 		<item
 		    android:id="@+id/nav_options"
 		    android:title="Options" />
